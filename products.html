@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Venture Navigator</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .navbar {
+    display: flex !important; /* Ensure the navbar is always displayed */
+    opacity: 1 !important;    /* Make sure opacity is fully visible */
+    /* Other styling as needed */
+}
+
+
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg  navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand  ">
+          
+            <img src="img/logo.png" alt="" style="height: 70px;">
+        </a>
+        <button type="button" class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="products.html" class="nav-item nav-link active">My Resources</a>
+                <a href="podcast.html" class="nav-item nav-link">Podcast</a>
+            </div>
+        
+       
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container-fluid bg-light my-5 py-6" id="service">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">What I Offer</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <!-- Optional Content or Button -->
+                </div>
+            </div>
+            <div class="row g-4">
+    
+                <!-- Product 1: Fundraising Tool E-Book -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s" id="1">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-book fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Fundraising Tool E-Book</h4>
+                            <h6 class="mb-3">Price: <span class="text-primary">₹199</span></h6>
+                            <span>🚀 Get detailed information on VC firms along with their contact details.</span><br>
+                            <span>🚀 Includes direct application links to various start-up grants.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 2: Pre-Recorded Video -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s" id="2">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-video fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">How to get Funding  </h4><small>Pre-Recorded Video</small>
+                            <h6 class="mb-3">Price: <span class="text-primary">₹299</span></h6>
+                            <span>🚀 Learn 50+ strategies to secure start-up funding.</span><br>
+                            <span>🚀 Understand the differences between a start-up and a traditional business.</span><br>
+                            <span>🚀 Explore methods to solve start-up problems without financial backing.</span><br>
+                            <span>🚀 Master the art of pitching to investors.</span><br>
+                            <span>🚀 Discover ways to reduce burn rates and optimize resources.</span><br>
+                            <span>🚀 Gain insights into other start-up strategies and examples.</span><br>
+                            <span>🚀 Learn how to dilute shares strategically.</span><br>
+                            <span>🚀 Connect with angel investors and VCs effectively.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 3: Venture Navigator Podcast -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s" id="3">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-podcast fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Venture Navigator Podcast</h4>
+                            <h6 class="mb-3">Join for Free</h6>
+                            <span>🚀 Are you a risk-taker with extraordinary start-up experiences? Share your journey as a guest on our podcast.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 4: Create Your Pitch Deck E-Book -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s" id="4">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-file-alt fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Create Your Pitch Deck E-Book</h4>
+                            <h6 class="mb-3">Price: <span class="text-primary">₹149</span></h6>
+                            <span>🚀 Get expert guidance on building an investible pitch deck.</span><br>
+                            <span>🚀 Benefit from an in-depth study to refine your pitch for investors.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 5: Validate Your Pitch Deck -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s" id="5">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-check fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Validate Your Pitch Deck</h4>
+                            <h6 class="mb-3">Price: <span class="text-primary">₹99</span></h6>
+                            <span>🚀 Already have a pitch deck? Validate it to ensure it’s ready for investors.</span><br>
+                            <span>🚀 Get expert advice on corrections to enhance your pitch.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Validate Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Product 6: Connect VC Now E-Book -->
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s" id="6">
+                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+                        <div class="bg-icon flex-shrink-0 mb-3">
+                            <i class="fa fa-address-book fa-2x text-dark"></i>
+                        </div>
+                        <div class="ms-sm-4">
+                            <h4 class="mb-3">Connect VC Now E-Book</h4>
+                            <h6 class="mb-3">Price: <span class="text-primary">₹99</span></h6>
+                            <span>🚀 Access a comprehensive list of 200+ VC firms and angel investors.</span><br>
+                            <span>🚀 Includes direct application links for easy access.</span>
+                            <br><br>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+<!-- Contact Start -->
+<div class="container-xxl pb-5 d-flex justify-content-center align-items-center" id="contact">
+    <div class="icon-container">
+        <a href="https://www.instagram.com/venture_navigator?igsh=ZHd6YnoyMHB4eWMx" target="_blank" class="me-3 icon-link">
+            <img src="img/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/share/ZMpTzBdEV3HtXyCo/?mibextid=qi2Omg" target="_blank" class="me-3 icon-link">
+            <img src="img/facebook.png" alt="Facebook" class="social-icon" style="margin-left: 40px;">
+        </a>
+        <a href="https://youtube.com/@venturenavigator7?si=zBVQe5I80xyHfvdB" target="_blank" class="me-3 icon-link">
+            <img src="img/youtube.png" alt="YouTube" class="social-icon" style="margin-left: 40px;">
+        </a>
+        <a href="https://www.linkedin.com/in/venture-navigator?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="me-3 icon-link">
+            <img src="img/media.png" alt="LinkedIn" class="social-icon" style="margin-left: 40px;">
+        </a>
+    </div>
+</div>
+
+<!-- Copyright Start -->
+<div class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom text-secondary" href="#">Venture Navigator</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom text-secondary" href="https://www.acmeflare.in/">Acmeflare</a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
