@@ -224,50 +224,55 @@
     align-items: center;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
-    padding: 20px 0;
-    flex-wrap: nowrap; /* Keep elements in a single row */
-    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    padding: 15px 0; /* Reduced padding */
+    flex-wrap: nowrap; /* Ensure elements stay in a single row */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .achievement {
     text-align: center;
-    margin: 0 10px;
-    min-width: 120px; /* Ensure the width is appropriate for mobile */
+    margin: 0 5px; /* Reduced margin */
+    min-width: 80px; /* Reduced minimum width */
+    flex-shrink: 1; /* Allow the element to shrink to fit */
 }
 
 .achievement h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px; /* Reduced font size */
     font-weight: bold;
 }
 
 .achievement p {
-    margin: 5px 0 0;
-    font-size: 14px;
+    margin: 3px 0 0; /* Reduced margin */
+    font-size: 12px; /* Reduced font size */
 }
 
 .divider {
-    border-left: 2px solid #000;
-    height: 50px;
-    margin: 0 20px;
+    border-left: 1px solid #000; /* Reduced border thickness */
+    height: 30px; /* Reduced height */
+    margin: 0 10px; /* Reduced margin between achievements */
 }
 
 /* Media Query for small screens */
 @media (max-width: 576px) {
     .achievement-strip {
-        padding: 10px 0;
+        padding: 5px 0; /* Further reduce padding */
+    }
+
+    .achievement {
+        min-width: 50px; /* Further reduce width for smaller screens */
     }
 
     .divider {
-        margin: 0 10px; /* Reduce margin between achievements on small screens */
+        margin: 0 3px; /* Further reduce margin on small screens */
     }
 
     .achievement h3 {
-        font-size: 16px; /* Slightly reduce font size on small screens */
+        font-size: 8px; /* Further reduce font size */
     }
 
     .achievement p {
-        font-size: 12px; /* Slightly reduce font size on small screens */
+        font-size: 5px; /* Further reduce font size */
     }
 }
 
@@ -399,6 +404,34 @@
     background-size: cover;
 }
 
+.service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.service-item:hover .details, .service-item:focus .details {
+    opacity: 1;
+    max-height: 1000px; /* Large enough to show full content */
+}
+
+.content h4,
+.content h6,
+.content .btn {
+    transition: transform 0.5s ease;
+}
+
+.service-item:hover .content h4,
+.service-item:hover .content h6,
+.service-item:hover .btn {
+    transform: translateY(-10px); /* Slight upward movement */
+}
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
