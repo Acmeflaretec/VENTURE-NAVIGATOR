@@ -260,7 +260,7 @@
     }
 
     .achievement {
-        min-width: 50px; /* Further reduce width for smaller screens */
+        min-width: 45px; /* Further reduce width for smaller screens */
     }
 
     .divider {
