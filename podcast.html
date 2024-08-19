@@ -77,37 +77,38 @@
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <h1 class="display-5 mb-4">Podcast</h1>
                     <p class="mb-4">If you are a risk-taker and have an extraordinary experience in your start-up, share it with the world. We invite you as a guest on the VENTURE NAVIGATOR Podcast. Please fill out the required fields below:</p>
-                    <form>
+                    <form name="contact-form" method="post">  <!-- Ensure the form has the correct name -->
                         <div class="row g-3">
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="company-name" placeholder="Company Name">
+                                    <input type="text" class="form-control" id="company-name" name="company-Name" placeholder="Company Name">
                                     <label for="company-name">✅ Company Name</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="startup-concept" placeholder="What is your start-up concept?">
+                                    <input type="text" class="form-control" id="startup-concept" name="startup-concept" placeholder="What is your start-up concept?">
                                     <label for="startup-concept">✅ What is your start-up concept?</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="current-stage" placeholder="What is the current stage?">
+                                    <input type="text" class="form-control" id="current-stage" name="current-stage" placeholder="What is the current stage?">
                                     <label for="current-stage">✅ What is the current stage?</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="What makes your project different from others?" id="project-difference" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="What makes your project different from others?" name="project-difference" id="project-difference" style="height: 100px"></textarea>
                                     <label for="project-difference">✅ What makes your project different from others?</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Submit</button>
+                                <button class="btn btn-primary py-3 px-5" type="submit" disabled>Submit</button>
                             </div>
                         </div>
                     </form>
+                    
                 </div>
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <img src="img/podcast.jpg" style="border-radius: 30px;" alt="Podcast Image" class="img-fluid">
@@ -159,6 +160,7 @@
 
 
     <!-- JavaScript Libraries -->
+     <script src="js/form.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
